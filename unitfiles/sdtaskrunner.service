@@ -1,0 +1,15 @@
+[Unit]
+Description=SDTaskRunner
+After=network.target
+
+[Service]
+WorkingDirectory=/var/data/iviva/EmailGateway/SDTaskRunner
+ExecStart=/var/data/iviva/SDTaskRunner
+Restart=on-failure
+#Restart service after 3 seconds if the service crashes
+RestartSec=5
+User= harish
+Environment=IVIVA_CONFIG_PATH=/home/harish/iviva.yml
+[Install]
+WantedBy=multi-user.target
+
