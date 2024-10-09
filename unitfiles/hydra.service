@@ -1,0 +1,18 @@
+[Unit]
+Description=hydra
+After=network.target
+StartLimitIntervalSec=90
+StartLimitBurst=5
+
+[Service]
+WorkingDirectory=/var/data/iviva/NodeES6Eval
+ExecStart=/usr/bin/node out/app.js
+Restart=on-failure
+# Restart service after 3 seconds if the service crashes
+RestartSec=5
+User= harish
+Environment=IVIVA_CONFIG_PATH=/home/harish/iviva.yml
+
+[Install]
+WantedBy=multi-user.target
+
