@@ -1,0 +1,56 @@
+---
+configuration:
+  settings:
+    DB: user id=sa;pwd=Welcome@123;data source = Database;initial catalog=asp
+    MessagingDB: user id=sa;pwd=Welcome@123;data source = localhost;initial catalog=MessagingDB
+    JobQueueDB: user id=sa;pwd=Welcome@123;data source = localhost;initial catalog=JobQueue
+    LucyEventDB: user id=sa;pwd=Welcome@123;data source = localhost;initial catalog=lucyevents
+    GroupADB: user id=sa;pwd=Welcome@123;data source = localhost;initial catalog=ProcessDB
+    GroupA: DB 
+    SystemPath: /var/data/iviva/ivivaweb
+    AccountUrl: http://{account}.ivivacloud.com
+    BaseDomain: 127.0.0.1
+    MongoDBServer: mongodb://Database:27017
+    UrlPattern: Subdomain
+    LogPath: /var/data/iviva/logs
+    CompressCss: 0
+    CompressJavascript: 0
+    StaticFile.CacheTime: 14
+    
+    Path: /var/data/iviva/apps/ProductAppset
+    CustomAppsPath: /var/data/iviva/MAF,/var/data/iviva/customapps
+    WebError.ShowStackTrace: 1
+    RedisServer: Database
+    LucyServer: Database:9090
+    OI.CopyAttributes: 1
+    OI.Debugger: 1
+    OIEnabled: 1
+    FileServer: /var/data/iviva/uploads
+    ProcessEngine.Clustered: 1
+    ProcessEngine.Groups: A
+    ProcessEngine.SleepTime: 1000
+    ProcessEngine.Threads: 1
+   
+    Lucy.EnableCors: 1
+    LucyEngine.MaxDebugInfoLength: 5000
+    
+    OI.MaxWebletsPerRow: 2
+    MaxUploadFileSizeMB: 30
+    SaveAttachmentsToFileServer: 1
+    Marketplace.AWS.AccessKey: AKIARAR74F5B5HNASHXH
+    Marketplace.AWS.SecretKey: j20fS8jdldIWVnIHlRuC1aesgX7Y2SJyqg/wXPOZ
+
+
+    # EmailGateway.Host: smtp.gmail.com
+    # EmailGateway.SeviceProvider: Other  
+    # EmailGateway.User: example@sigsi.com   //Add email address accordingly
+    # EmailGateway.Port: 587
+    # EmailGateway.UseSSL: 1
+    # EmailGateway.ThrottleTime: 25
+    CrystalReportLogo: /var/data/iviva/ProductAppset/CrystalReports/Logo/CRLogo.png
+    'New Value #1': System.String[]
+    'New Value #2': 0
+    'New Value #3': ''
+    # EmailGateway.EmailAddress: example@sigsi.com   //Add email address accordingly
+    # EmailGateway.Password: password   //Add password 
+    Iviva.Server.Host: http://Database:5000
